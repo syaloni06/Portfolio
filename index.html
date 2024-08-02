@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-slate-950 m-0 p-0">
+    <!-- Navbar starts here -->
+    <nav
+      class="w-full h-14 bg-slate-800 flex justify-between items-center px-5 md:px-5 fixed top-0 z-50 shadow-lg shadow-cyan-500"
+    >
+      <div class="flex">
+        <span
+          class="font-bold text-2xl bg-cyan-500 text-slate-800 rounded-lg px-2 animate-pulse"
+          >Syaloni</span
+        >
+        <span class="font-bold text-2xl text-cyan-500 mx-2">Barman</span>
+      </div>
+      <!-- Toggle Button (Checkbox) -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <!-- Menu Toggle Button -->
+      <label
+        for="menu-toggle"
+        class="lg:hidden text-4xl cursor-pointer block mx-2"
+      >
+        <span class="text-white">&#8801;</span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <div
+        class="lg:flex z-[-1] lg:z-auto lg:static absolute bg-slate-800 w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 transition-all ease-in duration-500 peer-checked:top-10 peer-checked:opacity-100 opacity-100 top-[-400px]"
+      >
+        <ul class="lg:flex lg:items-center">
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              class="font-semibold text-white text-lg cursor-pointer hover:text-cyan-500"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              class="font-semibold text-white text-lg cursor-pointer hover:text-cyan-500"
+              href="#about"
+              >About</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              class="font-semibold text-white text-lg cursor-pointer hover:text-cyan-500"
+              href="#myskill"
+              >Skills</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              class="font-semibold text-white text-lg cursor-pointer hover:text-cyan-500"
+              href="#certificate"
+              >Certifications</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              class="font-semibold text-white text-lg cursor-pointer hover:text-cyan-500"
+              href="#project"
+              >Projects</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              class="font-semibold text-white text-lg cursor-pointer hover:text-cyan-500"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Static day/night toggle -->
+        <div class="flex items-center">
+          <label class="md:flex items-center cursor-pointer">
+            <input type="radio" name="radioGroup" class="hidden" />
+            <div class="box-border bg-slate-500 rounded-l-lg p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </div>
+          </label>
+
+          <label class="md:flex items-center cursor-pointer">
+            <input type="radio" name="radioGroup" class="hidden" />
+            <div class="bg-cyan-500 p-2 rounded-r-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
+            </div>
+          </label>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <!-- Header part starts here -->
+    <header
+      class="w-full h-auto flex flex-col md:flex-row justify-evenly text-black dark:text-white py-32 md:py-44 items-center md:items-start"
+    >
+      <article class="mb-10 md:mb-0">
+        <img
+          class="w-40 md:w-60 rounded-full shadow-3xl shadow-cyan-500 motion-safe:animate-bounce-slow"
+          src="heading.jpg"
+          alt="my picture"
+        />
+      </article>
+      <article
+        class="flex flex-col justify-evenly text-center md:text-left items-center md:items-start"
+      >
+        <h2 class="text-xl md:text-2xl font-bold">Hello, It's Me</h2>
+        <div class="text-4xl md:text-6xl font-extrabold">
+          <span>Syaloni</span>
+          <span class="text-cyan-500">Barman</span>
+        </div>
+        <p class="text-xs md:text-sm mt-2 md:mt-4">
+          I am an engineer and also have knowledge of Software development.
+        </p>
+        <ul class="flex mt-4 md:mt-6">
+          <!-- Facebook -->
+          <li
+            class="group mx-5 border-2 border-cyan-500 rounded-full p-2 hover:bg-cyan-500 hover:scale-125 ease-in duration-75 shadow-b hover:shadow-cyan-500"
+          >
+            <a
+              href="https://www.facebook.com/profile.php?id=100009206428249"
+              target="_blank"
+              class="[&>svg]:h-5 [&>svg]:w-5"
+            >
+              <svg
+                class="fill-current text-cyan-500 group-hover:text-slate-950"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#06b6d4"
+                viewBox="0 0 320 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                />
+              </svg>
+            </a>
+          </li>
+          <!-- Linkedin -->
+          <li
+            class="group mx-5 border-2 border-cyan-500 rounded-full p-2 hover:bg-cyan-500 hover:scale-125 ease-in duration-75 shadow-b hover:shadow-cyan-500"
+          >
+            <a
+              href="https://www.linkedin.com/in/syaloni-barman/"
+              target="_blank"
+              class="[&>svg]:h-5 [&>svg]:w-5"
+            >
+              <svg
+                class="fill-current text-cyan-500 group-hover:text-slate-950"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#06b6d4"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                />
+              </svg>
+            </a>
+          </li>
+          <!-- Instagram -->
+          <li
+            class="group mx-5 border-2 border-cyan-500 rounded-full p-2 hover:bg-cyan-500 hover:scale-125 ease-in duration-75 shadow-b hover:shadow-cyan-500"
+          >
+            <a
+              href="https://www.instagram.com/syalon_i/?hl=en"
+              target="_blank"
+              class="[&>svg]:h-5 [&>svg]:w-5"
+            >
+              <svg
+                class="fill-current text-cyan-500 group-hover:text-slate-950"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#06b6d4"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </li>
+          <!-- Github -->
+          <li
+            class="group mx-5 border-2 border-cyan-500 rounded-full p-2 hover:bg-cyan-500 hover:scale-125 ease-in duration-75 shadow-b hover:shadow-cyan-500"
+          >
+            <a
+              href="https://github.com/syaloni06"
+              target="_blank"
+              class="[&>svg]:h-5 [&>svg]:w-5"
+            >
+              <svg
+                class="fill-current text-cyan-500 group-hover:text-slate-950"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#06b6d4"
+                viewBox="0 0 496 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a
+          class="w-28 h-9"
+          href="Syaloni_Barman_Resume.pdf"
+          download="Syaloni_Barman_Resume"
+          ><button
+            class="bg-cyan-500 rounded-xl text-slate-950 w-28 h-9 font-bold mt-6 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 ease-in duration-0"
+          >
+            Download CV
+          </button></a
+        >
+      </article>
+    </header>
+    <!-- Header part ends here -->
+
+    <main>
+      <!-- About me section starts here -->
+      <section
+        id="about"
+        class="flex flex-col lg:flex-row justify-evenly mx-6 lg:mx-20 gap-6 py-12 lg:py-24"
+      >
+        <article
+          class="w-full lg:w-1/2 h-auto flex flex-col justify-evenly text-black dark:text-white text-justify"
+        >
+          <div class="font-bold text-3xl lg:text-4xl mb-4">
+            <span class="text-cyan-500">About</span>
+            <span>Me</span>
+          </div>
+          <div class="mb-4">
+            <span class="text-lg lg:text-xl font-bold mx-1 lg:mx-2"
+              >eat();</span
+            >
+            <span
+              class="text-lg lg:text-2xl font-extrabold mx-1 lg:mx-2 text-cyan-500"
+              >code();</span
+            >
+            <span class="text-lg lg:text-xl font-bold mx-1 lg:mx-2"
+              >sleep();</span
+            >
+            <span class="text-lg lg:text-xl font-bold mx-1 lg:mx-2"
+              >repeat();</span
+            >
+          </div>
+          <p class="mb-4">
+            Hello! I'm Syaloni Barman, an enthusiastic and motivated Software
+            Development Engineer with a fresh perspective and a strong
+            foundation in software development. I recently graduated with a
+            degree in Electronics and Communication Engineering (ECE) from
+            Bengal Institute of Technology, Kolkata, West Bengal.
+          </p>
+          <p class="mb-4">
+            My academic background has equipped me with a solid understanding of
+            programming languages, algorithms, and software engineering
+            principles. I am proficient in HTML, CSS, JavaScript, Java, SQL etc.
+            and have hands-on experience through various academic projects and
+            internships.
+          </p>
+          <button
+            class="bg-cyan-500 rounded-lg text-slate-950 w-28 h-9 font-bold my-2 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 transition duration-200 ease-in"
+          >
+            Read More
+          </button>
+        </article>
+        <article class="w-full lg:w-1/3 flex justify-center lg:justify-end">
+          <img
+            class="w-64 h-96 rounded-md shadow-3xl shadow-cyan-500 animate-pulse"
+            src="About Me.jpg"
+            alt="About Image"
+          />
+        </article>
+      </section>
+
+      <!-- About me section ends here -->
+
+      <!-- My skills section starts here -->
+      <section id="myskill" class="py-20">
+        <article
+          class="font-bold text-3xl lg:text-4xl text-white text-center mb-8 lg:mb-12"
+        >
+          <span>My</span>
+          <span class="text-cyan-500">Skills</span>
+        </article>
+        <!-- Progressive bar -->
+        <section
+          class="flex flex-col lg:flex-row justify-evenly mx-4 lg:mx-28 gap-8"
+        >
+          <article
+            class="w-full lg:w-3/5 border border-slate-800 bg-slate-800 p-6 lg:p-10 rounded-xl"
+          >
+            <div class="m-2 text-white font-bold">HTML</div>
+            <div class="w-full my-2 bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-cyan-500 text-xs text-white font-bold text-center p-0.5 leading-none rounded-full w-11/12"
+              >
+                91%
+              </div>
+            </div>
+
+            <div class="m-2 text-white font-bold">CSS/Tailwind CSS</div>
+            <div class="w-full my-2 bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-cyan-500 text-xs text-white font-bold text-center p-0.5 leading-none rounded-full w-10/12"
+              >
+                83%
+              </div>
+            </div>
+
+            <div class="m-2 text-white font-bold">JavaScript</div>
+            <div class="w-full my-2 bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-cyan-500 text-xs text-white font-bold text-center p-0.5 leading-none rounded-full w-3/5"
+              >
+                60%
+              </div>
+            </div>
+
+            <div class="m-2 text-white font-bold">Java</div>
+            <div class="w-full my-2 bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-cyan-500 text-xs text-white font-bold text-center p-0.5 leading-none rounded-full w-4/5"
+              >
+                80%
+              </div>
+            </div>
+
+            <div class="m-2 text-white font-bold">SQL</div>
+            <div class="w-full my-2 bg-gray-200 rounded-full dark:bg-gray-700">
+              <div
+                class="bg-cyan-500 text-xs text-white font-bold text-center p-0.5 leading-none rounded-full w-3/4"
+              >
+                75%
+              </div>
+            </div>
+          </article>
+
+          <!-- Circular bar -->
+          <article class="w-full lg:w-2/5 flex flex-col justify-between">
+            <div class="flex justify-evenly mb-8 lg:mb-0">
+              <!-- Circular Progress -->
+              <div class="relative size-40">
+                <svg
+                  class="size-full"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Background Circle -->
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="16"
+                    fill="none"
+                    class="stroke-current text-gray-200 dark:text-neutral-700"
+                    stroke-width="2"
+                  ></circle>
+                  <!-- Progress Circle inside a group with rotation -->
+                  <g class="origin-center -rotate-90 transform">
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
+                      fill="none"
+                      class="stroke-current text-blue-600 dark:text-cyan-500"
+                      stroke-width="2"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="15"
+                    ></circle>
+                  </g>
+                </svg>
+                <div class="font-bold text-white flex justify-center">
+                  Communication
+                </div>
+                <!-- Percentage Text -->
+                <div
+                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                >
+                  <span
+                    class="text-center text-2xl font-bold text-gray-800 dark:text-white"
+                    >85%</span
+                  >
+                </div>
+              </div>
+              <!-- End Circular Progress -->
+              <!-- Circular Progress -->
+              <div class="relative size-40">
+                <svg
+                  class="size-full"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Background Circle -->
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="16"
+                    fill="none"
+                    class="stroke-current text-gray-200 dark:text-neutral-700"
+                    stroke-width="2"
+                  ></circle>
+                  <!-- Progress Circle inside a group with rotation -->
+                  <g class="origin-center -rotate-90 transform">
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
+                      fill="none"
+                      class="stroke-current text-blue-600 dark:text-cyan-500"
+                      stroke-width="2"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="20"
+                    ></circle>
+                  </g>
+                </svg>
+                <span class="font-bold text-white flex justify-center"
+                  >Team work</span
+                >
+                <!-- Percentage Text -->
+                <div
+                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                >
+                  <span
+                    class="text-center text-2xl font-bold text-gray-800 dark:text-white"
+                    >80%</span
+                  >
+                </div>
+              </div>
+              <!-- End Circular Progress -->
+            </div>
+            <div class="flex justify-evenly">
+              <!-- Circular Progress -->
+              <div class="relative size-40">
+                <svg
+                  class="size-full"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Background Circle -->
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="16"
+                    fill="none"
+                    class="stroke-current text-gray-200 dark:text-neutral-700"
+                    stroke-width="2"
+                  ></circle>
+                  <!-- Progress Circle inside a group with rotation -->
+                  <g class="origin-center -rotate-90 transform">
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
+                      fill="none"
+                      class="stroke-current text-blue-600 dark:text-cyan-500"
+                      stroke-width="2"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="5"
+                    ></circle>
+                  </g>
+                </svg>
+                <span class="font-bold text-white flex justify-center"
+                  >Creativity</span
+                >
+                <!-- Percentage Text -->
+                <div
+                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                >
+                  <span
+                    class="text-center text-2xl font-bold text-gray-800 dark:text-white"
+                    >95%</span
+                  >
+                </div>
+              </div>
+              <!-- End Circular Progress -->
+              <!-- Circular Progress -->
+              <div class="relative size-40">
+                <svg
+                  class="size-full"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Background Circle -->
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="16"
+                    fill="none"
+                    class="stroke-current text-gray-200 dark:text-neutral-700"
+                    stroke-width="2"
+                  ></circle>
+                  <!-- Progress Circle inside a group with rotation -->
+                  <g class="origin-center -rotate-90 transform">
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
+                      fill="none"
+                      class="stroke-current text-blue-600 dark:text-cyan-500"
+                      stroke-width="2"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="12"
+                    ></circle>
+                  </g>
+                </svg>
+                <span class="font-bold text-white flex justify-center"
+                  >Problem Solving</span
+                >
+                <!-- Percentage Text -->
+                <div
+                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                >
+                  <span
+                    class="text-center text-2xl font-bold text-gray-800 dark:text-white"
+                    >88%</span
+                  >
+                </div>
+              </div>
+              <!-- End Circular Progress -->
+            </div>
+          </article>
+        </section>
+      </section>
+      <!-- Skills section ends here -->
+
+      <!-- Certificatins section starts here -->
+      <section id="certificate" class="py-16">
+        <article
+          class="font-bold text-4xl text-black dark:text-white text-center m-12"
+        >
+          <span>My</span>
+          <span class="text-cyan-500">Certifications</span>
+        </article>
+        <article
+          class="flex flex-wrap gap-8 justify-center md:gap-20 md:justify-evenly xl:mx-28"
+        >
+          <!-- HTML -->
+          <div
+            class="h-80 w-60 border border-slate-800 bg-slate-800 p-5 rounded-xl flex flex-col justify-evenly items-center transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="#e44f26"
+                d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30z"
+              />
+              <path fill="#f1662a" d="m16 27.858l8.17-2.265l1.922-21.532H16z" />
+              <path
+                fill="#ebebeb"
+                d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16zm0 8.027l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004z"
+              />
+              <path
+                fill="#fff"
+                d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83zm0-6.256v3.091h7.466l.062-.694l.141-1.567l.074-.83z"
+              />
+            </svg>
+            <h1 class="text-black dark:text-white font-bold text-lg">HTML</h1>
+            <p class="text-black dark:text-white text-justify text-xs">
+              This achievement highlights the ability to structure and format
+              web content, creating functional and visually appealing websites.
+              It enhances your web development skills and opens up new
+              opportunities in career or personal projects.
+            </p>
+            <a href="html_Certificate.pdf" target="_blank">
+              <button
+                class="bg-cyan-500 rounded-lg text-slate-950 w-28 h-9 font-bold m-2 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 ease-in duration-0"
+              >
+                Certificate
+              </button>
+            </a>
+          </div>
+
+          <!-- CSS -->
+
+          <div
+            class="h-80 w-60 border border-slate-800 bg-slate-800 p-5 rounded-xl flex flex-col justify-center items-center transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              viewBox="0 0 256 256"
+            >
+              <g fill="none">
+                <rect width="256" height="256" fill="#0277bd" rx="60" />
+                <path
+                  fill="#ebebeb"
+                  d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"
+                />
+                <path
+                  fill="#fff"
+                  d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"
+                />
+              </g>
+            </svg>
+            <h1 class="text-black dark:text-white font-bold text-lg">CSS</h1>
+            <p class="text-black dark:text-white text-justify text-xs">
+              This certification showcases the ability to style and design web
+              pages, making them visually appealing and user-friendly. With the
+              knowledge of CSS, can control layouts, colors, fonts, and overall
+              aesthetics of websites, enhancing the user experience.
+            </p>
+            <a href="css_Certificate.pdf" target="_blank">
+              <button
+                class="bg-cyan-500 rounded-lg text-slate-950 w-28 h-9 font-bold m-2 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 ease-in duration-0"
+              >
+                Certificate
+              </button>
+            </a>
+          </div>
+
+          <!-- Javascript -->
+
+          <div
+            class="h-80 w-60 border border-slate-800 bg-slate-800 p-5 rounded-xl flex flex-col justify-center items-center transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              viewBox="0 0 256 256"
+            >
+              <path fill="#f7df1e" d="M0 0h256v256H0z" />
+              <path
+                d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257c0-18.044 13.747-31.792 35.228-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.732 12.03c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
+              />
+            </svg>
+            <h1 class="text-black dark:text-white font-bold text-lg">
+              Javascript
+            </h1>
+            <p class="text-black dark:text-white text-justify text-xs">
+              This certification demonstrates the ability to add interactivity
+              and dynamic features to web pages. With JavaScript, can create
+              responsive and engaging user experiences, manipulate web content
+              in real-time, and build complex web applications.
+            </p>
+            <a href="javascript_Certificate.pdf" target="_blank">
+              <button
+                class="bg-cyan-500 rounded-lg text-slate-950 w-28 h-9 font-bold m-2 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 ease-in duration-0"
+              >
+                Certificate
+              </button>
+            </a>
+          </div>
+
+          <!-- Java -->
+          <div
+            class="h-80 w-60 border border-slate-800 bg-slate-800 p-5 rounded-xl flex flex-col justify-center items-center transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              viewBox="0 0 256 346"
+            >
+              <path
+                fill="#5382a1"
+                d="M82.554 267.473s-13.198 7.675 9.393 10.272c27.369 3.122 41.356 2.675 71.517-3.034c0 0 7.93 4.972 19.003 9.279c-67.611 28.977-153.019-1.679-99.913-16.517m-8.262-37.814s-14.803 10.958 7.805 13.296c29.236 3.016 52.324 3.263 92.276-4.43c0 0 5.526 5.602 14.215 8.666c-81.747 23.904-172.798 1.885-114.296-17.532"
+              />
+              <path
+                fill="#e76f00"
+                d="M143.942 165.515c16.66 19.18-4.377 36.44-4.377 36.44s42.301-21.837 22.874-49.183c-18.144-25.5-32.059-38.172 43.268-81.858c0 0-118.238 29.53-61.765 94.6"
+              />
+              <path
+                fill="#5382a1"
+                d="M233.364 295.442s9.767 8.047-10.757 14.273c-39.026 11.823-162.432 15.393-196.714.471c-12.323-5.36 10.787-12.8 18.056-14.362c7.581-1.644 11.914-1.337 11.914-1.337c-13.705-9.655-88.583 18.957-38.034 27.15c137.853 22.356 251.292-10.066 215.535-26.195M88.9 190.48s-62.771 14.91-22.228 20.323c17.118 2.292 51.243 1.774 83.03-.89c25.978-2.19 52.063-6.85 52.063-6.85s-9.16 3.923-15.787 8.448c-63.744 16.765-186.886 8.966-151.435-8.183c29.981-14.492 54.358-12.848 54.358-12.848m112.605 62.942c64.8-33.672 34.839-66.03 13.927-61.67c-5.126 1.066-7.411 1.99-7.411 1.99s1.903-2.98 5.537-4.27c41.37-14.545 73.187 42.897-13.355 65.647c0 .001 1.003-.895 1.302-1.697"
+              />
+              <path
+                fill="#e76f00"
+                d="M162.439.371s35.887 35.9-34.037 91.101c-56.071 44.282-12.786 69.53-.023 98.377c-32.73-29.53-56.75-55.526-40.635-79.72C111.395 74.612 176.918 57.393 162.439.37"
+              />
+              <path
+                fill="#5382a1"
+                d="M95.268 344.665c62.199 3.982 157.712-2.209 159.974-31.64c0 0-4.348 11.158-51.404 20.018c-53.088 9.99-118.564 8.824-157.399 2.421c.001 0 7.95 6.58 48.83 9.201"
+              />
+            </svg>
+            <h1 class="text-black dark:text-white font-bold text-lg">Java</h1>
+            <p class="text-black dark:text-white text-justify text-xs">
+              This certification highlights your proficiency in one of the most
+              widely-used programming languages, known for its versatility and
+              robustness. With Java, you can develop platform-independent
+              applications, from web and mobile apps to large-scale enterprise
+              systems.
+            </p>
+            <a href="java_Certificate.pdf" target="_blank">
+              <button
+                class="bg-cyan-500 rounded-lg text-slate-950 w-28 h-9 font-bold m-2 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 ease-in duration-0"
+              >
+                Certificate
+              </button>
+            </a>
+          </div>
+
+          <!-- SQL -->
+          <div
+            class="h-80 w-60 border border-slate-800 bg-slate-800 p-5 rounded-xl flex flex-col justify-center items-center transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="#ffda44"
+                d="M8.562 15.256A21.2 21.2 0 0 0 16 16.449a21.2 21.2 0 0 0 7.438-1.194c1.864-.727 2.525-1.535 2.525-2V9.7a10.4 10.4 0 0 1-2.084 1.076A22.3 22.3 0 0 1 16 12.078a22.4 22.4 0 0 1-7.879-1.3A10.3 10.3 0 0 1 6.037 9.7v3.55c0 .474.663 1.278 2.525 2.006m0 6.705a15.6 15.6 0 0 0 2.6.741a25 25 0 0 0 4.838.453a25 25 0 0 0 4.838-.452a15.6 15.6 0 0 0 2.6-.741c1.864-.727 2.525-1.535 2.525-2v-3.39a10.7 10.7 0 0 1-1.692.825A23.5 23.5 0 0 1 16 18.74a23.5 23.5 0 0 1-8.271-1.348a11 11 0 0 1-1.692-.825v3.393c0 .466.663 1.271 2.525 2.001M16 30c5.5 0 9.963-1.744 9.963-3.894v-2.837a10.5 10.5 0 0 1-1.535.762l-.157.063A23.5 23.5 0 0 1 16 25.445a23.4 23.4 0 0 1-8.271-1.351l-.157-.063a10.5 10.5 0 0 1-1.535-.762v2.837C6.037 28.256 10.5 30 16 30"
+              />
+              <ellipse
+                cx="16"
+                cy="5.894"
+                fill="#ffda44"
+                rx="9.963"
+                ry="3.894"
+              />
+            </svg>
+            <h1 class="text-black dark:text-white font-bold text-lg">SQL</h1>
+            <p class="text-black dark:text-white text-justify text-xs">
+              This certification demonstrates the proficiency in Structured
+              Query Language, a fundamental tool for managing and manipulating
+              databases. With SQL, you can efficiently retrieve, insert, update,
+              and delete data, ensuring data integrity and performance in
+              various applications.
+            </p>
+            <a href="sql_Certificate.pdf" target="_blank">
+              <button
+                class="bg-cyan-500 rounded-lg text-slate-950 w-28 h-9 font-bold m-2 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 ease-in duration-0"
+              >
+                Certificate
+              </button>
+            </a>
+          </div>
+        </article>
+      </section>
+      <!-- Certification section ends here -->
+
+      <!-- Project section starts here -->
+      <section id="project" class="py-20">
+        <article
+          class="font-bold text-4xl text-black dark:text-white text-center m-12"
+        >
+          <span>My</span>
+          <span class="text-cyan-500">Projects</span>
+        </article>
+        <article class="flex flex-wrap gap-10 xl:gap-20 justify-evenly">
+          <!-- Online Shoping Website -->
+          <div
+            class="relative bg-[url('https://png.pngtree.com/background/20230612/original/pngtree-shopping-cart-floating-around-a-digital-background-with-modern-elements-picture-image_3362317.jpg')] bg-cover bg-center bg-no-repeat h-60 w-80 rounded-lg transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0 overflow-hidden"
+          >
+            <div
+              class="h-full w-full absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600/100 to-cyan-500/0 opacity-0 hover:animate-fromBottom hover:opacity-100 transition-opacity overflow-hidden"
+            >
+              <h1 class="text-xl font-bold text-white">
+                Online Shoping Website
+              </h1>
+              <svg
+                class="w-10 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Hotel Booking Website -->
+          <div
+            class="relative bg-[url('https://t3.ftcdn.net/jpg/02/88/43/24/360_F_288432483_4T6FmyB0pyh2UkBlaDrAOi2Kj7RXPnzJ.jpg')] bg-cover bg-center bg-no-repeat h-60 w-80 rounded-lg transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0 overflow-hidden"
+          >
+            <div
+              class="h-full w-full absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600/100 to-cyan-500/0 opacity-0 hover:animate-fromBottom hover:opacity-100 transition-opacity overflow-hidden"
+            >
+              <h1 class="text-xl font-bold text-white">
+                Hotel Booking Website
+              </h1>
+              <svg
+                class="w-10 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Diagnostic Tests Booking Website -->
+          <div
+            class="relative bg-[url('https://img.freepik.com/premium-photo/photo-healthcare-technology-innovation-medicine-health-science-research-professional-photography-should-use-high-quality-generative-ai_546192-974.jpg')] bg-cover bg-center bg-no-repeat h-60 w-80 rounded-lg transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0 overflow-hidden"
+          >
+            <div
+              class="h-full w-full absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600/100 to-cyan-500/0 opacity-0 hover:animate-fromBottom hover:opacity-100 transition-opacity overflow-hidden"
+            >
+              <h1 class="text-xl font-bold text-white">
+                Diagnostic Tests Booking Website
+              </h1>
+              <svg
+                class="w-10 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Personalised chatbot -->
+          <div
+            class="relative bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-rendering-of-an-android-robot-with-chatbot-concept-and-raised-hand-image_3744389.jpg')] bg-cover bg-center bg-no-repeat h-60 w-80 rounded-lg transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0 overflow-hidden"
+          >
+            <div
+              class="h-full w-full absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600/100 to-cyan-500/0 opacity-0 hover:animate-fromBottom hover:opacity-100 transition-opacity overflow-hidden"
+            >
+              <h1 class="text-xl font-bold text-white">Personalised chatbot</h1>
+              <svg
+                class="w-10 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- AI -->
+          <div
+            class="relative bg-[url('https://images.ctfassets.net/2pg6dzbljspe/6hd2BnjLRdyTEFN9xSZSCN/24cd243737f7da438b6b4d0370b7b69b/e45ce0c6-0e92-4f24-9994-cde2dbbfd634.jpg?fm=jpg&fl=progressive&q=60&w=742&h=417')] bg-cover bg-center bg-no-repeat h-60 w-80 rounded-lg transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0 overflow-hidden"
+          >
+            <div
+              class="h-full w-full absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600/100 to-cyan-500/0 opacity-0 hover:animate-fromBottom hover:opacity-100 transition-opacity overflow-hidden"
+            >
+              <h1 class="text-xl font-bold text-white">
+                Artificial Inteligence
+              </h1>
+              <svg
+                class="w-10 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- To-Do Website -->
+          <div
+            class="relative bg-[url('https://lh3.googleusercontent.com/fife/ALs6j_G_5xctFVgYRXeZO0Ufrsh1MQVd_pmLite-zk5yo_ltJC8Eu8Yv_qMb-rLSqXv3XAc8YJw1tpnoBJXxJQCGcQPxGDSuJUMASkYD4loXDGQsERxIq1-CXZKIFmFXkr5LFIHIrb3U5-_zR8TPM_StOBTheaRx_9fMYqufwXuEtRJepccx2oBaifHMxzmY5XihSxBqXtu4cL4nDxeywT0DYdjDqnUTMqxmb7h6flPhDlIfhqB1WORAaj30vxh3BRzndGBPBsLmZ1Na0aMa6z48i5E7iNnQWzzxYTM5ZTSVtciaGmivGSAAyOqjl9jqi_-I7MCTNo_BA5zhC-Lp-aZkC9ZRQEQd40DzWHMjBm3Gtam9GTjjkrYGwDzrhYLa7EIhws9BiReOATOLlP_GDEzdRLCxMaW_Mx-pcav406k7ZbhAceUTGn0tbAj9XV_5WavFsM17vOHsK3hwjRi2OZI60khWg-awg3npSLGg20Riqkn45r0181Se-ye5xTJMjRTJ8jHu7csP27BPa8bhXr-EFdR5mR1LrHMEr777YRmTVXSqEHxudzjhwwyseeH6wr951yLjpQ3WhGyPs58QQoL9p2-YrofJezMwX0Sew7JvIsrUI2qtZP62ogeWV54ezYvEtaM8bNsneXCNi6usbw3BdT2TzoF3RDOuF1rwbBlZ2O9yPeIX5ml-DtDNdyfTH2SM019X9PtZ7ReRlw1iperqPnaTLiT8k9QVLnE1munj9-a1lQj7c0SLu-5oHzcOu7Zpy6JWv4zctyTuOEcUYPJOkPp4WV1okKSED52aC4oTB-AMy_E4b3imWWWKRILqmIXOlzdapjdiLJuc21EqIVyytp_QDoSoTjpkA_3tTNg3Sy5k8nC8isVjRcYqDYvRAcFnJ9sLZ7x2h_EEKhtobQ7jvPw_aSKYglklJRiJrNd3dLsvakg--nkDm9B-TENc6UctkTcY2RU_Elc34l4qcBzg_WuOMG-o0-ZjALgfhb_ySaorrcouK-K0SR-B98pc0SCrUybDY2Mo9GcVb5dJuwym0-9OyTjQFa0lXeKjpIQi1MGJB-XNN9U-QhnAppH9FmL71lOrirzQOAqV_zKwLConjj_CHijdQpWhJ-zRb3rtFZDUFM1vyfy-LY5q3JgRsTkqFoWBlxPKm-BPYB3wV3gkpZVkoGYlr_0-gbF3h69DLe7BUPtp-1f-xOr1Pc276bCV6f5GalA24Dq40Y--vlGuxQtFtgwM-MxEyBbEjR1RZWNGgQl2X5NDXD30VSIbaAyGvuKQTDyt4o2oCHDc7Afc-QVy5XhQ53Q5UnenLVutZMMz1Hx1zpTXkcIRpejxDWit4YtHf5fD1rdGgWStbtveqq59-7ywOlb6EuU2D4nD_q_-vqOj7AfGgG_8Hi0Z5lq2TBKafskrehKoav2nKTuF5vuhx6_Kilghvph59i7zuQ64pd2qQNMJbhTmGTif4r09rzcwUBNkxGxXwYcFaFLFcCB-Ia6bYpNbE_6Z-AqAlLWMpWg5JlImTzO_SGbDqGTzXw3FXuhpgCCW-zn0xnKVtYErrCjCUg8tnr0xHecsbA=s512')] bg-cover bg-center bg-no-repeat h-60 w-80 rounded-lg transition-shadow hover:shadow-cyan-500 shadow-b hover:scale-110 ease-in duration-0 overflow-hidden"
+          >
+            <div
+              class="h-full w-full absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600/100 to-cyan-500/0 opacity-0 hover:animate-fromBottom hover:opacity-100 transition-opacity overflow-hidden"
+            >
+              <h1 class="text-xl font-bold text-white">To-do List website</h1>
+              <svg
+                class="w-10 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Project section ends here -->
+
+      <!-- Contact section starts here -->
+      <section id="contact" class="pb-20 pt-4">
+        <article class="font-bold text-4xl text-white text-center m-12">
+          <span>Contact</span>
+          <span class="text-cyan-500">Me!</span>
+        </article>
+        <article class="flex justify-center">
+          <form
+            class="w-full lg:w-1/2 flex flex-col justify-evenly items-center px-4"
+            action=""
+          >
+            <div class="flex flex-col md:flex-row md:gap-2 w-full my-2">
+              <input
+                class="bg-slate-800 rounded-md w-full md:w-1/2 p-2 h-10 mb-2 md:mb-0 focus:outline-none focus:ring focus:ring-cyan-500 text-white"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+                required
+              />
+              <input
+                class="bg-slate-800 rounded-md w-full md:w-1/2 p-2 h-10 focus:outline-none focus:ring focus:ring-cyan-500 text-white"
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="flex flex-col md:flex-row md:gap-2 w-full">
+              <input
+                class="bg-slate-800 rounded-md w-full md:w-1/2 p-2 h-10 mb-2 md:mb-0 focus:outline-none focus:ring focus:ring-cyan-500 text-white"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="bg-slate-800 rounded-md w-full md:w-1/2 p-2 h-10 focus:outline-none focus:ring focus:ring-cyan-500 text-white"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Mobile Number"
+                required
+              />
+            </div>
+            <div class="flex flex-col w-full my-2">
+              <textarea
+                class="bg-slate-800 rounded-md w-full p-2 h-32 md:h-48 focus:outline-none focus:ring focus:ring-cyan-500 text-white"
+                name="message"
+                id="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button
+              class="bg-cyan-500 rounded-lg text-slate-950 w-28 h-9 font-bold m-2 shadow-b shadow-cyan-500 hover:bg-cyan-200 hover:scale-110 ease-in duration-300"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </article>
+      </section>
+
+      <!-- Contact section ends here -->
+    </main>
+
+    <!-- Footer section starts here -->
+    <footer
+      class="w-full h-14 bg-slate-800 flex justify-between items-center px-5 fixed bottom-0 shadow-t shadow-cyan-500"
+    >
+      <div class="flex">
+        <!-- Phone -->
+        <div
+          class="group mx-2 border-2 border-cyan-500 rounded-full p-2 hover:bg-cyan-500 hover:scale-125 ease-in duration-75 shadow-b hover:shadow-cyan-500"
+        >
+          <a href="tel:+6290749474" class="[&>svg]:h-5 [&>svg]:w-5">
+            <svg
+              class="fill-current text-cyan-500 group-hover:text-slate-950"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#06b6d4"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+              <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mail -->
+        <div
+          class="group mx-2 border-2 border-cyan-500 rounded-full p-2 hover:bg-cyan-500 hover:scale-125 ease-in duration-75 shadow-b hover:shadow-cyan-500"
+        >
+          <a href="mailto:syalonib@gmail.com" class="[&>svg]:h-5 [&>svg]:w-5">
+            <svg
+              class="fill-current text-cyan-500 group-hover:text-slate-950"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="#06b6d4"
+            >
+              <path
+                d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+              />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="font-bold text-cyan-500 text-xs md:text-lg">
+        &copy; Copyright 2024 Syaloni Barman
+      </p>
+    </footer>
+    <!-- Footer section ends here -->
+  </body>
+</html>
